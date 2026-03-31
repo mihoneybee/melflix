@@ -1,9 +1,3 @@
-Parabéns pelo projeto! O seu código está muito bem estruturado e vai muito além do que foi proposto na imersão. Você criou uma aplicação robusta, com troca de temas, manipulação dinâmica de dados e uma experiência de usuário (UX) digna de um portfólio de Engenharia de Software.
-
-Aqui está o seu **README.md** personalizado. Ele destaca que a Alura forneceu a faísca inicial, mas que toda a "inteligência" e o polimento visual vieram do seu aprofundamento técnico.
-
----
-
 # 🎬 MELFLIX — Streaming Interface
 
 Este projeto é uma plataforma de streaming pessoal que simula a experiência de usuário de grandes serviços como Netflix e Disney+. O desenvolvimento teve como ponto de partida a **Imersão Front-End da Alura**, onde foi apresentada a criação de uma página inicial estática. A partir dessa base, utilizei meus conhecimentos técnicos para transformar um rascunho visual em uma aplicação funcional, dinâmica e interativa.
