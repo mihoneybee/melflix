@@ -8,9 +8,9 @@ Este projeto é uma plataforma de streaming pessoal que simula a experiência de
 Diferente da proposta inicial da imersão, que focava apenas na estrutura básica da página de perfis, este projeto foi expandido para incluir uma lógica completa de navegação e exibição de conteúdo.
 
 ### 🔹 O que veio da Imersão (A Base)
-* [cite_start]**Conceitos Iniciais**: Estruturação semântica com HTML5[cite: 13, 15].
-* [cite_start]**Estilização Básica**: Uso de Flexbox para alinhamento e Reset CSS para consistência visual[cite: 22, 24].
-* [cite_start]**Inspiração Visual**: Guia inicial para a tela de "Quem está assistindo?"[cite: 56, 77].
+* **Conceitos Iniciais**: Estruturação semântica com HTML5[cite: 13, 15].
+* **Estilização Básica**: Uso de Flexbox para alinhamento e Reset CSS para consistência visual[cite: 22, 24].
+* **Inspiração Visual**: Guia inicial para a tela de "Quem está assistindo?"[cite: 56, 77].
 
 ### ⚡ Meus Aprofundamentos (Diferenciais Técnicos)
 * **Arquitetura de Dados Dinâmica**: Implementei uma estrutura de objetos em JavaScript (`PROFILES_DATA`) que centraliza as informações de perfis, categorias e mídias, permitindo que o catálogo mude completamente dependendo do usuário selecionado.
@@ -40,6 +40,4 @@ Diferente da proposta inicial da imersão, que focava apenas na estrutura básic
 ---
 
 ## 🏁 Como Rodar o Projeto
-1. Clone este repositório.
-2. Abra o arquivo `index.html` no seu navegador.
-3. *(Opcional)* Use a extensão **Live Server** no VS Code para uma melhor experiência de desenvolvimento.
+1. Acesse a página https://melflix.pages.dev/
