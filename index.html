@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MELFLIX — Sua plataforma de streaming pessoal com séries, animes e doramas.">
+    <link rel="icon" href="icon.png" type="image/ico">
+    <title>MELFLIX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Botão de tema -->
+    <div class="theme-switcher">
+        <button id="themeToggle" class="theme-btn" aria-label="Alternar tema escuro e claro">
+            🌙
+        </button>
+    </div>
+
+    <!-- ==================== TELA 1: SELEÇÃO DE PERFIL ==================== -->
+    <main id="profile-select">
+        <div class="profile-select-inner">
+            <h1 class="brand-logo">MELFLIX</h1>
+            <h2 class="profile-title">Quem está assistindo?</h2>
+            <section aria-label="Perfis disponíveis">
+                <ul class="profiles">
+                    <a href="#" class="profile" data-profile="mel" id="profile-mel">
+                        <figure>
+                            <img src="assets/perfil1.png"
+                                alt="Ilustração de Mel, jovem ruiva com óculos e colete de exploradora.">
+                            <figcaption>Mel</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="profile" data-profile="vitor" id="profile-vitor">
+                        <figure>
+                            <img src="assets/perfil2.png"
+                                alt="Ilustração de Vitor, jovem com cabelos escuros ondulados e barba.">
+                            <figcaption>Vitor</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="profile" data-profile="nicole" id="profile-nicole">
+                        <figure>
+                            <img src="assets/perfil3.png"
+                                alt="Ilustração de Nicole.">
+                            <figcaption>Nicole</figcaption>
+                        </figure>
+                    </a>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- ==================== TELA 2: CATÁLOGO ==================== -->
+    <div id="catalog-screen" class="catalog-screen hidden">
+        <!-- Header -->
+        <header class="catalog-header">
+            <div class="header-left">
+                <h1 class="header-logo">MELFLIX</h1>
+                <nav class="header-nav">
+                    <span id="nav-profile-name" class="nav-profile-name"></span>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="profile-menu" id="profile-menu">
+                    <img id="header-avatar" class="header-avatar" src="" alt="Avatar do perfil">
+                    <span id="header-name" class="header-name"></span>
+                    <span class="dropdown-arrow">▼</span>
+                    <div class="profile-dropdown" id="profile-dropdown">
+                        <div class="dropdown-profiles" id="dropdown-profiles"></div>
+                        <div class="dropdown-divider"></div>
+                        <button id="switch-profile-btn" class="switch-profile-btn">
+                            ↩ Trocar Perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Banner -->
+        <section class="hero-banner" id="hero-banner">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge" id="hero-badge">DESTAQUE</span>
+                <h2 class="hero-title" id="hero-title"></h2>
+                <p class="hero-description" id="hero-description"></p>
+                <div class="hero-actions">
+                    <button class="btn-play" id="hero-play-btn">
+                        ▶ Assistir Trailer
+                    </button>
+                    <button class="btn-info" id="hero-info-btn">
+                        ℹ Mais Informações
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linhas de conteúdo -->
+        <div class="catalog-content" id="catalog-content">
+            <!-- Gerado dinamicamente pelo JS -->
+        </div>
+    </div>
+
+    <!-- ==================== MODAL DE TRAILER ==================== -->
+    <div class="trailer-modal hidden" id="trailer-modal">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close" aria-label="Fechar trailer">✕</button>
+            <div class="modal-video-wrapper">
+                <iframe id="trailer-iframe" class="modal-iframe"
+                    src=""
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="modal-info">
+                <h3 class="modal-title" id="modal-title"></h3>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
